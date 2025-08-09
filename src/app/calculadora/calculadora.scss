@@ -1,0 +1,89 @@
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #333;
+
+        main{
+            background-color: #ffffff;
+            height: 70vh;
+            width: 40vw;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+            align-items: end;
+            border-radius: 3px;
+        }
+
+        .forms{
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            
+            
+        }
+
+        h1{
+            margin: 50px 0px;
+        }
+
+        input{
+            padding: 0.8rem 0rem;
+            width: 70%;
+            border-radius: 3px;
+            border: none;
+            background-color: #a1dbe7;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input:not(:placeholder-shown) {
+            font-size: 1.3rem; /* aumenta o texto doo input dps de digitado */
+
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+
+        label{
+            display: block;
+            margin: 30px 0 5px;
+            font-size: 20px;
+        }
+
+        .botoes{
+            display: flex;
+            justify-content: center; 
+            gap: 30px;   
+            
+        }
+
+        .botoes button{
+            padding: 15px 25px; 
+            background-color:#a1dbe7; 
+            border: none;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;    
+            font-size: 1.5rem; 
+            cursor: pointer;
+        }
+
+        .result{
+            font-size: 1.3rem;
+            margin-top: 40px;
+        }
+
+        .result span{
+            font-weight: 700;
+        }
+
+        hr{
+            margin: 40px;    
+            border: 1px solid #a1dbe7;
+        }
+    }
+
