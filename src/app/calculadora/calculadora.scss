@@ -85,5 +85,41 @@
             margin: 40px;    
             border: 1px solid #a1dbe7;
         }
+
+        @media (max-width: 768px) {
+            main{
+                width: 80vw;
+                height: 70vh;
+               
+            }
+
+            .botoes button{
+                padding: 10px 15px;   
+                margin-bottom: 100px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            label{
+                font-size: 1rem;
+            }
+
+            input{
+                width: 90%;
+                font-size: 1.2rem;
+                padding: 5px 0px;
+            }
+
+            h1{
+                margin: 10px ;
+                font-size: 1.5rem;
+            }
+
+            .result{
+                font-size: 1.2rem;
+                margin: 0px;
+            }
+
+        }
     }
 
