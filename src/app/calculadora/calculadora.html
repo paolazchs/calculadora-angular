@@ -2,7 +2,7 @@
 
 <main>
     <div class="forms">
-        <form #Form="ngForm">
+        <form #Form="ngForm" (submit)="false">
             <h1>Calculadora</h1>
             <label for="n1">Primeiro Número:</label>
             <!-- [(ngModel)] é usado para pegar o valor do .ts e exibir -->
