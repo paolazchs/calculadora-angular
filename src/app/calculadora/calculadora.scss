@@ -1,122 +1,122 @@
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        color: #333;
-
-        main{
-            background-color: #ffffff;
-            height: 60%;
-            width: 40vw;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-            align-items: end;
-            border-radius: 3px;
-            min-height: 650px;
-            min-width: 350px;
-        }
-
-        .forms{
-            align-items: center;
-            padding: 20px;
-            text-align: center;
-            
-            
-        }
-
-        h1{
-            margin: 50px 0px;
-        }
-
-        input{
-            padding: 0.8rem 0rem;
-            width: 70%;
-            border-radius: 3px;
-            border: none;
-            background-color: #a1dbe7;
-            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        input:not(:placeholder-shown) {
-            font-size: 1.3rem; /* aumenta o texto doo input dps de digitado */
-
-        }
-
-        input[type=number]::-webkit-inner-spin-button,
-        input[type=number]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+}
 
 
+main {
+  background-color: #ffffff;
+  height: 60%;
+  width: min(40vw, 500px); 
+  max-width: 90%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  align-items: end;
+  border-radius: 3px;
+  min-height: 650px;
+  min-width: 350px;
+}
 
-        label{
-            display: block;
-            margin: 30px 0 5px;
-            font-size: 20px;
-        }
+.forms {
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
 
-        .botoes{
-            display: flex;
-            justify-content: center; 
-            gap: 30px;   
-            
-        }
+h1 {
+  margin: 50px 0px;
+}
 
-        .botoes button{
-            padding: 15px 25px; 
-            background-color:#a1dbe7; 
-            border: none;
-            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 2px;    
-            font-size: 1.5rem; 
-            cursor: pointer;
-        }
+input {
+  padding: 0.8rem 0rem;
+  width: 70%;
+  border-radius: 3px;
+  border: none;
+  background-color: #a1dbe7;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
-        .result{
-            font-size: 1.3rem;
-            margin-top: 40px;
-        }
+input:not(:placeholder-shown) {
+  font-size: 1.3rem; 
+}
 
-        .result span{
-            font-weight: 700;
-        }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-        hr{
-            margin: 40px;    
-            border: 1px solid #a1dbe7;
-        }
+label {
+  display: block;
+  margin: 30px 0 5px;
+  font-size: 20px;
+}
 
-        @media (max-width: 768px) {
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
-            .botoes button{
-                padding: 10px 15px;   
-                margin-bottom: 100px;
-                font-size: 14px;
-                font-weight: bold;
-            }
+.botoes button {
+  padding: 15px 25px;
+  background-color: #a1dbe7;
+  border: none;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-            label{
-                font-size: 1rem;
-            }
+.result {
+  font-size: 1.3rem;
+  margin-top: 40px;
+}
 
-            input{
-                width: 90%;
-                font-size: 1.2rem;
-                padding: 5px 0px;
-            }
+.result span {
+  font-weight: 700;
+}
 
-            h1{
-                margin: 10px ;
-                font-size: 1.5rem;
-            }
+hr {
+  margin: 40px;
+  border: 1px solid #a1dbe7;
+}
 
-            .result{
-                font-size: 1.2rem;
-                margin: 0px;
-            }
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    min-width: unset; 
+    min-height: unset;
+  }
 
-        }
-    }
+  .botoes button {
+    padding: 10px 15px;
+    margin-bottom: 100px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
+  label {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 5px 0px;
+  }
+
+  h1 {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+  .result {
+    font-size: 1.2rem;
+    margin: 0px;
+  }
+}
